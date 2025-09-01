@@ -55,9 +55,8 @@ USER nextjs
 
 EXPOSE 3000
 
-ENV PORT=${PORT:-3000}
-ENV HOSTNAME="0.0.0.0"
+ENV NODE_ENV=production
+ENV NEXT_TELEMETRY_DISABLED=1
 
 # server.js is created by next build from the standalone output
-# https://nextjs.org/docs/pages/api-reference/next-config-js/output
 CMD ["node", "server.js"]
