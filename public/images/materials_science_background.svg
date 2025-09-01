@@ -1,0 +1,116 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <defs>
+    <radialGradient id="bgGradient" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:0.3"/>
+      <stop offset="50%" style="stop-color:#764ba2;stop-opacity:0.2"/>
+      <stop offset="100%" style="stop-color:#4c63d2;stop-opacity:0.1"/>
+    </radialGradient>
+    
+    <!-- Atomic orbital patterns -->
+    <pattern id="atomicPattern" x="0" y="0" width="200" height="200" patternUnits="userSpaceOnUse">
+      <circle cx="100" cy="100" r="3" fill="#667eea" opacity="0.4"/>
+      <circle cx="50" cy="50" r="2" fill="#764ba2" opacity="0.3"/>
+      <circle cx="150" cy="150" r="2" fill="#4c63d2" opacity="0.3"/>
+      <circle cx="50" cy="150" r="1.5" fill="#667eea" opacity="0.2"/>
+      <circle cx="150" cy="50" r="1.5" fill="#764ba2" opacity="0.2"/>
+    </pattern>
+    
+    <!-- Crystal lattice lines -->
+    <pattern id="latticePattern" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
+      <path d="M0,50 L100,50" stroke="#667eea" stroke-width="0.5" opacity="0.2"/>
+      <path d="M50,0 L50,100" stroke="#764ba2" stroke-width="0.5" opacity="0.2"/>
+      <path d="M0,0 L100,100" stroke="#4c63d2" stroke-width="0.3" opacity="0.15"/>
+      <path d="M0,100 L100,0" stroke="#667eea" stroke-width="0.3" opacity="0.15"/>
+    </pattern>
+    
+    <!-- Molecular bonds -->
+    <pattern id="bondPattern" x="0" y="0" width="150" height="150" patternUnits="userSpaceOnUse">
+      <line x1="25" y1="25" x2="125" y2="125" stroke="#764ba2" stroke-width="1" opacity="0.1"/>
+      <line x1="125" y1="25" x2="25" y2="125" stroke="#667eea" stroke-width="1" opacity="0.1"/>
+      <circle cx="25" cy="25" r="4" fill="#667eea" opacity="0.2"/>
+      <circle cx="125" cy="125" r="4" fill="#764ba2" opacity="0.2"/>
+      <circle cx="125" cy="25" r="3" fill="#4c63d2" opacity="0.2"/>
+      <circle cx="25" cy="125" r="3" fill="#667eea" opacity="0.2"/>
+    </pattern>
+  </defs>
+  
+  <!-- Base background -->
+  <rect width="1920" height="1080" fill="url(#bgGradient)"/>
+  
+  <!-- Lattice structure overlay -->
+  <rect width="1920" height="1080" fill="url(#latticePattern)" opacity="0.6"/>
+  
+  <!-- Atomic positions -->
+  <rect width="1920" height="1080" fill="url(#atomicPattern)" opacity="0.8"/>
+  
+  <!-- Molecular bonds -->
+  <rect width="1920" height="1080" fill="url(#bondPattern)" opacity="0.5"/>
+  
+  <!-- Large atomic structures -->
+  <g opacity="0.15">
+    <!-- Central atomic cluster -->
+    <g transform="translate(960,540)">
+      <circle cx="0" cy="0" r="8" fill="#667eea"/>
+      <circle cx="30" cy="0" r="6" fill="#764ba2"/>
+      <circle cx="-30" cy="0" r="6" fill="#4c63d2"/>
+      <circle cx="0" cy="30" r="6" fill="#667eea"/>
+      <circle cx="0" cy="-30" r="6" fill="#764ba2"/>
+      <circle cx="21" cy="21" r="4" fill="#4c63d2"/>
+      <circle cx="-21" cy="21" r="4" fill="#667eea"/>
+      <circle cx="21" cy="-21" r="4" fill="#764ba2"/>
+      <circle cx="-21" cy="-21" r="4" fill="#4c63d2"/>
+      
+      <!-- Bonds -->
+      <line x1="0" y1="0" x2="30" y2="0" stroke="#667eea" stroke-width="2"/>
+      <line x1="0" y1="0" x2="-30" y2="0" stroke="#764ba2" stroke-width="2"/>
+      <line x1="0" y1="0" x2="0" y2="30" stroke="#4c63d2" stroke-width="2"/>
+      <line x1="0" y1="0" x2="0" y2="-30" stroke="#667eea" stroke-width="2"/>
+    </g>
+    
+    <!-- Corner atomic structures -->
+    <g transform="translate(300,200)">
+      <circle cx="0" cy="0" r="5" fill="#764ba2"/>
+      <circle cx="20" cy="0" r="4" fill="#667eea"/>
+      <circle cx="10" cy="17" r="4" fill="#4c63d2"/>
+      <line x1="0" y1="0" x2="20" y2="0" stroke="#764ba2" stroke-width="1.5"/>
+      <line x1="0" y1="0" x2="10" y2="17" stroke="#667eea" stroke-width="1.5"/>
+      <line x1="20" y1="0" x2="10" y2="17" stroke="#4c63d2" stroke-width="1.5"/>
+    </g>
+    
+    <g transform="translate(1620,200)">
+      <circle cx="0" cy="0" r="5" fill="#4c63d2"/>
+      <circle cx="-20" cy="0" r="4" fill="#764ba2"/>
+      <circle cx="-10" cy="17" r="4" fill="#667eea"/>
+      <line x1="0" y1="0" x2="-20" y2="0" stroke="#4c63d2" stroke-width="1.5"/>
+      <line x1="0" y1="0" x2="-10" y2="17" stroke="#764ba2" stroke-width="1.5"/>
+      <line x1="-20" y1="0" x2="-10" y2="17" stroke="#667eea" stroke-width="1.5"/>
+    </g>
+    
+    <g transform="translate(300,880)">
+      <circle cx="0" cy="0" r="5" fill="#667eea"/>
+      <circle cx="20" cy="0" r="4" fill="#4c63d2"/>
+      <circle cx="10" cy="-17" r="4" fill="#764ba2"/>
+      <line x1="0" y1="0" x2="20" y2="0" stroke="#667eea" stroke-width="1.5"/>
+      <line x1="0" y1="0" x2="10" y2="-17" stroke="#4c63d2" stroke-width="1.5"/>
+      <line x1="20" y1="0" x2="10" y2="-17" stroke="#764ba2" stroke-width="1.5"/>
+    </g>
+    
+    <g transform="translate(1620,880)">
+      <circle cx="0" cy="0" r="5" fill="#764ba2"/>
+      <circle cx="-20" cy="0" r="4" fill="#667eea"/>
+      <circle cx="-10" cy="-17" r="4" fill="#4c63d2"/>
+      <line x1="0" y1="0" x2="-20" y2="0" stroke="#764ba2" stroke-width="1.5"/>
+      <line x1="0" y1="0" x2="-10" y2="-17" stroke="#667eea" stroke-width="1.5"/>
+      <line x1="-20" y1="0" x2="-10" y2="-17" stroke="#4c63d2" stroke-width="1.5"/>
+    </g>
+  </g>
+  
+  <!-- Subtle wave patterns representing shock physics -->
+  <g opacity="0.08">
+    <path d="M0,300 Q480,250 960,300 T1920,300" stroke="#667eea" stroke-width="3" fill="none"/>
+    <path d="M0,400 Q480,450 960,400 T1920,400" stroke="#764ba2" stroke-width="2" fill="none"/>
+    <path d="M0,700 Q480,650 960,700 T1920,700" stroke="#4c63d2" stroke-width="2" fill="none"/>
+    <path d="M0,800 Q480,850 960,800 T1920,800" stroke="#667eea" stroke-width="3" fill="none"/>
+  </g>
+</svg>
