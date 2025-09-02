@@ -30,14 +30,14 @@ const Hero = () => {
           </div>
 
           <div className="space-y-4">
-            <h1 className="text-5xl md:text-7xl font-bold text-gray-900">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-gray-900 leading-tight">
               Dr. <span className="gradient-text">Sergey Galitskiy</span>
             </h1>
-            <p className="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-lg sm:text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
               Postdoctoral Researcher Physics Department<br />
               University of South Florida
             </p>
-            <p className="text-lg md:text-xl text-gray-500 max-w-2xl mx-auto">
+            <p className="text-base sm:text-lg md:text-xl text-gray-500 max-w-2xl mx-auto break-words">
               Specializing in Molecular Dynamics (MD), Density Functional Theory (DFT), Machine Learning (ML), Shock Physics, and Computational Materials Science
             </p>
           </div>

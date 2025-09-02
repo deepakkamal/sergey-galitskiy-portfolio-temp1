@@ -83,22 +83,22 @@ const About = () => {
               <p className="text-lg leading-relaxed">
                 My work contributes to understanding:
               </p>
-              <ul className="text-lg leading-relaxed space-y-2 ml-4">
+              <ul className="text-base sm:text-lg leading-relaxed space-y-2 ml-4">
                 <li className="flex items-start">
-                  <span className="text-primary-600 mr-3 mt-2">•</span>
-                  <span>deformation mechanisms, spall failure, and microstructural evolution in light-weight and refractory metals;</span>
+                  <span className="text-primary-600 mr-3 mt-2 flex-shrink-0">•</span>
+                  <span className="break-words">deformation mechanisms, spall failure, and microstructural evolution in light-weight and refractory metals;</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-primary-600 mr-3 mt-2">•</span>
-                  <span>mechanisms of deformation and melting in Carbon systems at conditions relevant to ICF at NIF and interplanetary science;</span>
+                  <span className="text-primary-600 mr-3 mt-2 flex-shrink-0">•</span>
+                  <span className="break-words">mechanisms of deformation and melting in Carbon systems at conditions relevant to ICF at NIF and interplanetary science;</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-primary-600 mr-3 mt-2">•</span>
-                  <span>development of new quantum-accurate machine learning interatomic potentials (MLIP);</span>
+                  <span className="text-primary-600 mr-3 mt-2 flex-shrink-0">•</span>
+                  <span className="break-words">development of new quantum-accurate machine learning interatomic potentials (MLIP);</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-primary-600 mr-3 mt-2">•</span>
-                  <span>analysis tools for atomistic data with Ovito and Python.</span>
+                  <span className="text-primary-600 mr-3 mt-2 flex-shrink-0">•</span>
+                  <span className="break-words">analysis tools for atomistic data with Ovito and Python.</span>
                 </li>
               </ul>
             </div>

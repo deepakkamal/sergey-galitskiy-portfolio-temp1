@@ -183,20 +183,20 @@ const Publications = () => {
                       </div>
                     </div>
                   )}
-                  <div className="flex-1">
-                    <div className="flex items-start justify-between mb-3">
-                      <h4 className="text-xl font-semibold text-gray-900 leading-tight pr-4">
+                  <div className="flex-1 min-w-0">
+                    <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between mb-3 gap-2">
+                      <h4 className="text-lg sm:text-xl font-semibold text-gray-900 leading-tight break-words">
                         {pub.title}
                       </h4>
-                      <span className="bg-primary-100 text-primary-800 px-3 py-1 rounded-full text-sm font-medium whitespace-nowrap">
+                      <span className="bg-primary-100 text-primary-800 px-3 py-1 rounded-full text-sm font-medium whitespace-nowrap self-start">
                         {pub.type}
                       </span>
                     </div>
                     
                     <div className="space-y-2 mb-4">
-                      <div className="flex items-center text-gray-600">
-                        <Users size={16} className="mr-2" />
-                        <span>{pub.authors}</span>
+                      <div className="flex items-start text-gray-600">
+                        <Users size={16} className="mr-2 mt-0.5 flex-shrink-0" />
+                        <span className="break-words text-sm sm:text-base">{pub.authors}</span>
                       </div>
                       <div className="flex items-center text-gray-600">
                         <FileText size={16} className="mr-2" />
@@ -208,8 +208,8 @@ const Publications = () => {
                       </div>
                     </div>
 
-                    <div className="flex flex-wrap gap-4 text-sm">
-                      <span className="text-gray-500">
+                    <div className="flex flex-col sm:flex-row sm:flex-wrap gap-2 sm:gap-4 text-sm">
+                      <span className="text-gray-500 break-all">
                         DOI: {pub.doi}
                       </span>
                       <span className="text-primary-600 font-medium">

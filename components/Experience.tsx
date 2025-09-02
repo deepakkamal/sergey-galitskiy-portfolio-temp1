@@ -140,7 +140,13 @@ const Experience = () => {
                       </div>
                       {exp.logo && (
                         <div className="ml-4 flex-shrink-0">
-                          <div className={`${exp.logoSize === 'large' ? 'h-36 w-36' : exp.logoSize === 'medium' ? 'h-32 w-32' : 'h-24 w-24'} flex items-center justify-center`}>
+                          <div className={`${
+                            exp.logoSize === 'large' 
+                              ? 'h-20 w-20 sm:h-24 sm:w-24 md:h-32 md:w-32 lg:h-36 lg:w-36' 
+                              : exp.logoSize === 'medium' 
+                                ? 'h-16 w-16 sm:h-20 sm:w-20 md:h-24 md:w-24 lg:h-32 lg:w-32' 
+                                : 'h-12 w-12 sm:h-16 sm:w-16 md:h-20 md:w-20 lg:h-24 lg:w-24'
+                          } flex items-center justify-center`}>
                             <img 
                               src={exp.logo} 
                               alt={exp.logoAlt} 
@@ -203,7 +209,7 @@ const Experience = () => {
                       </div>
                       {edu.logo && (
                         <div className="ml-4 flex-shrink-0">
-                          <div className="h-24 w-24 flex items-center justify-center">
+                          <div className="h-12 w-12 sm:h-16 sm:w-16 md:h-20 md:w-20 lg:h-24 lg:w-24 flex items-center justify-center">
                             <img 
                               src={edu.logo} 
                               alt={edu.logoAlt} 

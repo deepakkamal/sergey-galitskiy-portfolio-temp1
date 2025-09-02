@@ -48,7 +48,17 @@ body::before {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  /* Removed background-attachment: fixed for better mobile performance */
+}
+
+/* Mobile-specific background optimization */
+@media (max-width: 768px) {
+  body::before {
+    position: absolute;
+    background-size: cover;
+    background-position: center top;
+    min-height: 100vh;
+  }
 }
 
 /* Floating animation for atomic background */
@@ -87,4 +97,25 @@ a {
 
 .scroll-smooth {
   scroll-behavior: smooth;
+}
+
+/* Touch-friendly enhancements */
+.touch-manipulation {
+  touch-action: manipulation;
+}
+
+/* Improve button and interactive element sizing for touch */
+@media (max-width: 768px) {
+  button, 
+  a[role="button"], 
+  input[type="button"], 
+  input[type="submit"] {
+    min-height: 44px;
+    min-width: 44px;
+  }
+  
+  /* Ensure adequate spacing between touch targets */
+  .touch-target {
+    margin: 8px 0;
+  }
 }
